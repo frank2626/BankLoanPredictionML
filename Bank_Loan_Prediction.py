@@ -10,7 +10,6 @@ def run():
     img1 = img1.resize((156,145))
     st.image(img1,use_column_width=False)
     st.title("Bank Loan Access Prediction using Machine Learning")
-
     ## Account No
     account_no = st.text_input('Account number')
 
@@ -87,13 +86,13 @@ def run():
             st.error(
                 "Hello: " + fn +" || "
                 "Account number: "+account_no +' || '
-                'your loan will be Approved'
+                'your loan will be Rejected'
             )
         else:
             st.success(
                 "Hello: " + fn +" || "
                 "Account number: "+account_no +' || '
-                'your Loan will be Rejected'
+                'your Loan will be Approved'
             )
 
 run()
